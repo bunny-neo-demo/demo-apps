@@ -20,7 +20,7 @@ services:
       - db
     image: wordpress:latest
     build:
-      context: docker
+      context: ./
     volumes:
       - wordpress_data:/var/www/html
     ports:
